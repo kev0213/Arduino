@@ -5,6 +5,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Arduino</title>
 <style type="text/css">
+@-webkit-keyframes fadeIn {
+  from {    opacity: 0;  }
+  to {    opacity: 1;  }
+}
 font {
 	font-family: "Noto Sans CJK TC";
 }
@@ -12,13 +16,24 @@ a {
     text-decoration:none;
 	
 }
+
+iframe{
+	-webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+background-color:black;
+	}
 p{
 	background-color: rgba(255,255,255,0.8);
-	width: 50%;
-	margin-left: 25%;
+	width: 100%;
+	padding: 10px  0 10px 25%;
+	margin-left:-25%;
 }
 body
 {
+	margin:0;
 	text-align: center;
 	font-family: "Microsoft JhengHei UI";
 	background-attachment: fixed;
@@ -26,28 +41,49 @@ body
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size : 100%;
-	background-color: #333333;
+	background-color: #111111;
 }
+h1{
+	
+	color:white;
+	text-shadow:3px 3px #777777;}
+	@media only screen and (min-width: 1000px) {
+		body
+{
+	background-attachment: fixed;
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size : 1000px;
+}
+}
+	
 </style>
 </head>
 
 <body>
 
-<p>&nbsp;</p>
-<p>110419008王柏尊 </p>
-<p> 110419009徐尉秦</p>
-<p> 110419027房駿慈 </p>
+<p>110419008王柏尊<br />110419009徐尉秦<br />110419027房駿慈 </p>
 <h1>電子電路實驗作業</h1>
 <h1>最新!:</h1>
 
 
+<p>week14<br />1 步進馬達Stepper Motor<br />這邊是GIT上的ino檔連結<br />
+<a href="https://github.com/kev0213/Arduino/blob/master/StepperMotor.ino" target="new">https://github.com/kev0213/Arduino/blob/master/StepperMotor.ino</a></p>
+<iframe width="560" height="800" src="https://www.youtube.com/embed/E00P47FVUCg" frameborder="0" allowfullscreen></iframe>
+
+<p>week14<br />2 伺服馬達Servo Motor<br />這邊是GIT上的ino檔連結<br />
+<a href="https://github.com/kev0213/Arduino/blob/master/ServoMotor.ino" target="new">https://github.com/kev0213/Arduino/blob/master/ServoMotor.ino</a></p>
+<iframe width="560" height="800" src="https://www.youtube.com/embed/Ta-YN_7gHDc" frameborder="0" allowfullscreen></iframe>
+
+<p>week14<br />3-未完成 WIFI步進馬達Stepper Motor<br />這邊是GIT上的ino檔連結<br />
+<a href="https://github.com/kev0213/Arduino/blob/master/wifistepmotor.ino" target="new">https://github.com/kev0213/Arduino/blob/master/wifistepmotor.ino</a></p>
+
+<h1>舊作業:</h1>
+
 <p>week13<br />1）利用無線網路+溫濕度感測器量測溫度與溼度<br />2）利用ThingSpeak雲端服務儲存量側資料，並且顯示量測曲線圖<br />這邊是GIT上的ino檔連結<br />
-<a href="https://github.com/kev0213/Arduino/blob/master/WetTempFascinate.ino">https://github.com/kev0213/Arduino/blob/master/WetTempFascinate.ino</a></p>
+<a href="https://github.com/kev0213/Arduino/blob/master/WetTempFascinate.ino" target="new">https://github.com/kev0213/Arduino/blob/master/WetTempFascinate.ino</a></p>
 <iframe width="560" height="800" src="https://www.youtube.com/embed/t-_XaLZxZbU" frameborder="0" allowfullscreen></iframe>
-
-
-<p>舊作業:</p>
-
 
 <p>week12<br />利用無線網路+I2C遠端控制Arduino UNO 板子上的LED<br />
 利用無線網路+I2C遠端控制Arduino UNO 板子上的RGB LED<br />
